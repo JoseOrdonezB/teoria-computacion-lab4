@@ -1,0 +1,67 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+venv/
+env/
+.venv/
+.env/
+venv.bak/
+env.bak/
+
+# Archivos de configuración local
+*.env
+*.env.*
+!*.env.example
+
+# Archivos de dependencias compiladas
+*.so
+*.pyd
+*.dll
+
+# Archivos de distribución y empaquetado
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Archivos de test y cobertura
+.coverage
+htmlcov/
+.cache/
+.pytest_cache/
+.tox/
+.nox/
+
+# Logs
+*.log
+logs/
+*.out
+*.err
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Archivos temporales y del sistema
+*.tmp
+*.temp
+*.swp
+.DS_Store
+Thumbs.db
+
+# Archivos de IDEs y editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos generados por herramientas de documentación
+_site/
+docs/_build/
+
+# Otros
+.mypy_cache/
+.pyre/
+.pytype/
