@@ -7,6 +7,18 @@ class Nodo:
         self.derecha = self.derecha = derecha
         self.id = id(self)
 
+class State:
+    _next_id = 0
+    def __init__(self):
+        self.id = State._next_id; State._next_id += 1
+        self.edges = {}
+        self.eps = set()
+
+class Fragment:
+    def __init__(self, start, accepts):
+        self.start = start
+        self.accepts = set(accepts)
+
 def construir_arbol(postfix):
     pila = []
     for token in postfix:
@@ -184,17 +196,6 @@ def shunting_yard(regex):
             raise ValueError("Paréntesis desbalanceados.")
         salida.append(top)
     return salida
-class State:
-    _next_id = 0
-    def __init__(self):
-        self.id = State._next_id; State._next_id += 1
-        self.edges = {}
-        self.eps = set()
-
-class Fragment:
-    def __init__(self, start, accepts):
-        self.start = start
-        self.accepts = set(accepts)
 
 def _lit(symbol):
     s = State(); f = State()

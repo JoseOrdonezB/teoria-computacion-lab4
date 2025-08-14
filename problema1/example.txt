@@ -1,4 +1,4 @@
 (a*|b*)+ aaa
 ((ε|a)|b*)* abba
 (a|b)*abb(a|b)* bbabbba
-0?(1?)?0* aaa
+0?(1?)?0* abb
